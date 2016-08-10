@@ -14,7 +14,7 @@ import model.ProductBean;
 import model.ProductService;
 
 public class ProductServlet extends HttpServlet {
-	private ProductService service = new ProductService();
+	private ProductService service = new ProductService();           
 	@Override
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
