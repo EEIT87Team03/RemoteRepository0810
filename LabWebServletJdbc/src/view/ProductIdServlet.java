@@ -24,8 +24,8 @@ public class ProductIdServlet extends HttpServlet {
 		response.setContentType("text/plain; charset=UTF-8");
 		PrintWriter out = response.getWriter();
 		StringBuilder output = new StringBuilder();
-		///
-		//////
+
+		
 //接收資料、驗證資料、轉換資料
 		String temp = request.getParameter("id");
 		int id = 0;
