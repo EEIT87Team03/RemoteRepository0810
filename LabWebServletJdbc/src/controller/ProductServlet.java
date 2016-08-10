@@ -14,7 +14,7 @@ import model.ProductBean;
 import model.ProductService;
 
 public class ProductServlet extends HttpServlet {
-	private ProductService service = new ProductService();           
+	private ProductService service = new ProductService();
 	@Override
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
@@ -24,7 +24,7 @@ public class ProductServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String temp2 = request.getParameter("price");
 		String temp3 = request.getParameter("make");
-		String temp4 = request.getParameter("expire");   
+		String temp4 = request.getParameter("expire");
 		String prodaction = request.getParameter("prodaction");
 
 // 驗證資料
@@ -35,7 +35,7 @@ public class ProductServlet extends HttpServlet {
 			if (prodaction.equals("Insert") || prodaction.equals("Update")
 					|| prodaction.equals("Delete")) {
 				if (temp1 == null || temp1.trim().length() == 0) {
-					errors.put("id", "Please enter id for " + prodaction);  
+					errors.put("id", "Please enter id for " + prodaction);
 				}
 			}
 		}
